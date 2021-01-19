@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Soboleva Olga](https://up.htmlacademy.ru/htmlcss/30/user/1658897).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Колотович] (https://htmlacademy.ru/profile/id225353)
 
 ---
 

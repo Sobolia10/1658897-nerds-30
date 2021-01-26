@@ -6,28 +6,200 @@
 </head>
 <body>
 <header>
-<nav>
-  <a>
+  <nav>
     <a href="index.html">
-    <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип студии Нёрдс»">
-  </a>
-  <ul>
-    <li><a href="blank.html">Студия</a></li>
-    <li><a href="blank.html">Клиенты</a></li>
-    <li><a href="catalog.html">Магазин</a></li>
-    <li><a href="blank.html">Контакты</a></li>
-  </ul>
-  <a href="blank.html">Корзина</a>
-</nav>
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс»">
+    </a>
+    <ul>
+      <li><a href="blank.html">Студия</a></li>
+      <li><a href="blank.html">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+    <a href="blank.html">Корзина</a>
+  </nav>
   <p>Магазин готовых шаблонов</p>
 </header>
 <main>
   <h1>Магазин шаблонов</h1>
   <section>
-    <h2>Особенности</h2>
+    <h2>Фильтр товаров</h2>
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <!--Стоимость-->
+        <legend>Стоимость:</legend>
+        <div>
+          <input type="range" id="range-cost" name="cost"
+                 min="0" max="15 000"/>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="product-grid" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" name="product-grid" value="fixed" id="filter-fixed">
+            <label for="filter-fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" name="product-grid" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li>
+            <input type="checkbox" name="block-advantages" id="filter-block-advantages">
+            <label for="filter-block-advantages">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галлерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!--Кнопка со ссылкой-->
+      <p>
+        <a href="https://echo.htmlacademy.ru/">
+          <button type="submit">Показать</button>
+        </a>
+      </p>
+    </form>
+  </section>
 
+  <section>
+    <h2>Список готовых шаблонов</h2>
+    <span>Сортировать:</span>
+    <span>по цене</span>
+    <span>по типу</span>
+    <span>по названию</span>
+    <ul>
+      <li>
+        <!--Сверху шапку над каждом магазином-->
+        <a href="demonstration.html">
+          <h3>Sedona</h3>
+          <p>
+            <img src="img/img-sedona-1" width="358" height="578" alt="Магазин Sedona">
+          </p>
+          <p>Sedona</p>
+          <p>Информационный сайт <br>
+            для туристов</p>
+        </a>
+        <p>
+          <button type="button">9 900 ₽</button>
+        </p>
+      </li>
+      <li>
+        <a href="demonstration.html">
+          <h3>Pink</h3>
+          <img src="img/img-pink-1" width="358" height="578" alt="Магазин Pink">
+        </a>
+      </li>
+      <li>
+        <a href="demonstration.html">
+          <h3>Barbershop Borodinski</h3>
+          <img src="img/img-barbershop-1" width="358" height="578" alt="Магазин Barbershop Borodinski">
+        </a>
+      </li>
+      <li>
+        <a href="demonstration.html">
+          <h3>Mishka</h3>
+          <img src="img/img-mishka-1" width="358" height="578" alt="Магазин Mishka">
+        </a>
+      </li>
+      <li>
+        <a href="demonstration.html">
+          <h3>Aplus</h3>
+          <img src="img/img-aplus-1" width="358" height="578" alt="Магазин Aplus">
+        </a>
+      </li>
+      <li>
+        <a href="demonstration.html">
+          <h3>Kvast</h3>
+          <img src="img/img-kvast-1" width="358" height="578" alt="Магазин Kvast">
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <a href="#">Следующая</a>
+      </li>
+    </ul>
   </section>
 </main>
+<footer>
+  <section>
+    <img src="img/map-1" width="1440" height="416" alt="Иллюстрация Карты">
+    <img src="img/map-marker-1" width="231" height="190" alt="Иллюстрация Указателя местонахождения">
+    <p>NЁRDS DESIGN STUDIO</p>
+    <p>191186, Санкт-Петербург, <br>
+      ул. Б. Конюшенная, д. 19/8 <br>
+      тел. +7 (812) 275-75-75</p>
+    <a href="blank.html">Напишите нам</a>
+  </section>
+  <section>
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h3>Давайте дружить, это выгодно!</h3>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </section>
+</footer>
 
+<section>
+  <h2>Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-field-id">Ваше имя:</label>
+      <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="email-email">Ваш email:</label>
+      <input id="email-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="text-text">Текст письма</label>
+      <input id="text-text" type="text" name="text" placeholder="В свободной форме">
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+  <button type="button">Закрыть</button>
+</section>
 </body>
 </html>

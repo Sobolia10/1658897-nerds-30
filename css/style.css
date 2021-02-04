@@ -9,7 +9,7 @@
   --basic-white: #ffffff;
   --basic-red: #FB565A;
   --basic-green: #00CA74;
-  --basic-yellow: #EFC84A;
+  --basic-yellow:  #EFC849;
   --basic-black: #000000;
 
   --active-dark-red: #E74246;
@@ -22,6 +22,9 @@
   --active-black: #444444;
   --active-grey: #D7DCDE;
   --active-border-grey: #B4B9BB;
+
+  --special: #283136;
+  --special-grey: #666666;
 }
 
 /* Global */
@@ -33,7 +36,6 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: top center;
@@ -61,12 +63,13 @@ img {
   border: none;
 }
 
-.button:hover {
-  background-color: var(--active-dark-red);
+
+.button:active {
+  background-color: var(--active-extra-dark-red);
 }
 
-h1, h2, h3 {
-  visibility: hidden;
+.button:hover {
+  background-color: var(--active-dark-red);
 }
 
 /* Navigation */
@@ -89,24 +92,17 @@ h1, h2, h3 {
     font-size: 16px;
     line-height: 30px;
     color: var(--basic-black);
+    text-decoration: none;
   }
 
   .site-navigation a:active,
   .basket-navigation a:active {
-    color: var(--basic-black);
-    text-decoration: none;
-    font-size: 300px;
     opacity: 30%;
   }
 
   .site-navigation a:hover,
   .basket-navigation a:hover {
     color: var(--basic-red);
-    text-decoration: none;
-  }
-
-  .current-element {
-    border-bottom: 2px solid red;
   }
 
 /* Slider-description */
@@ -115,6 +111,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 
 /* Features */
@@ -156,19 +153,19 @@ h1, h2, h3 {
   border: none;
 }
 
-.button-yellow :hover {
+.button-yellow:hover {
   background-color: var(--active-dark-yellow);
 }
 
-.button-yellow :active {
+.button-yellow:active {
   background-color: var(--active-extra-dark-yellow);
 }
 
-.button-green :hover {
+.button-green:hover {
   background-color: var(--active-dark-green);
 }
 
-.button-green :active {
+.button-green:active {
   background-color: var(--active-extra-dark-green);
 }
 
@@ -197,7 +194,13 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-.table-item-text {
+.table-percent {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.table-text {
   font-size: 16px;
   line-height: 18px;
 }
@@ -251,18 +254,29 @@ h1, h2, h3 {
   color: var(--basic-white);
 }
 
-.social-button a:hover {
+.social-button:hover {
   background-color: var(--active-dark-red);
 }
 
-.social-button a:active {
+.social-button:active {
   background-color: var(--active-extra-dark-red);
+}
+
+.contacts-adress,
+.contacts-phone {
+  line-height: 18px;
+  color: var(--special-grey);
 }
 
 .promo-text {
   font-size: 36px; /*%*/
   line-height: 36px;
   font-weight: bold;
+}
+
+.promo-text+p {
+  line-height: 22px;
+  color: var(--active-black);
 }
 
 /*modal*/
@@ -339,4 +353,22 @@ h1, h2, h3 {
 
 .modal-close:active {
   opacity: 10%;
+}
+
+.login-form label {
+  line-height: 18px;
+}
+
+  /*correct*/
+
+.slider-preview,
+.featured-item,
+.content p,
+.benefits-item,
+.table-item-text {
+  color: var(--special);
+}
+
+.visually-hidden {
+  visibility: hidden;
 }

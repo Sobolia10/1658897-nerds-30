@@ -3,32 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="page-body">
+<body class="body">
 <header class="main-header">
   <nav class="main-navigation">
+    <!--div class="main-navigation-wrapper"-->
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
+      <!--div class="container"-->
     <ul class="site-navigation">
-      <li><a href="blank.html">Студия</a></li>
+      <li><a class="current-element" href="blank.html">Студия</a></li>
       <li><a href="blank.html">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="blank.html">Контакты</a></li>
     </ul>
-    <a class="basket" href="blank.html">Корзина</a>
+        <div class="basket-navigation">
+    <a class="basket-navigation" href="blank.html">Корзина</a>
+        </div>
     <!--Здесь БУДЕТ СЛАЙДЕР-->
     <p><input class="slide1-button" name="slide" type="radio" value="slide1">Слайд 1</p>
-    <p><input class="slde2-button" name="slide" type="radio" value="slide2">Слайд 2</p>
+    <p><input class="slide2-button" name="slide" type="radio" value="slide2">Слайд 2</p>
     <p><input class="slide3-button" name="slide" type="radio" value="slide3">Слайд 3</p>
     <section class="slider-description">
       <h2>Слайд 1</h2>
-      <p class="slider-healine">Долго, дорого,
+      <p class="slider-headline">Долго, дорого,
         скрупулезно.</p>
       <p class="slider-preview">Математически выверенный дизайн <br>
         для вашего сайта или мобильного приложения.</p>
@@ -47,7 +53,6 @@
       </p>
       <a class="button" href="blank.html">Узнать больше</a>
       <img class="slider-img" src="img/nerds-index-slide2.jpg" width="760" height="431" alt="Слайд 2">
-      <!--кнопки листания слайдера-->
     </section>
     <section class="slider-descriptionn">
       <h2>Слайд 3</h2>
@@ -60,6 +65,8 @@
       <img class="slider-img" src="img/nerds-index-slide3.jpg" width="760" height="431" alt="Слайд 3">
       <!--кнопки листания слайдера-->
     </section>
+    <!--/div>
+    </div-->
   </nav>
 </header>
 <main class="container">
@@ -79,7 +86,7 @@
         <img class="featured-img" src="img/illustration-apps.jpg" width="300" height="146" alt="Пример дизайна студии Нёрдс-приложения">
         <p>Покорите топ-10 приложений <br>
           в AppStore и Google Play</p>
-        <button class="button" type="button">Заказать</button>
+        <button class="button-green" type="button">Заказать</button>
       </li>
       <li class="featured-item">
         <h3>Презентации</h3>
@@ -87,7 +94,7 @@
              alt="Пример дизайна студии Нёрдс-презентации">
         <p>Вы даже не подозреваете, <br>
           насколько вы изумительны!</p>
-        <button class="button" type="button">Заказать</button>
+        <button class="button-yellow" type="button">Заказать</button>
       </li>
     </ul>
   </section>
@@ -105,7 +112,7 @@
   </div>
   <div class="sidebar">
     <img class="sidebar-img" src="img/nerds-illustration1.jpg" width="360" height="208" alt="Иллюстрация Студии Нёрдс">
-    <p>с 2004 года Любим точность во всем:</p>
+    <p class="sidebar-headline">с 2004 года Любим точность во всем:</p>
     <table class="table-list">
       <tr class="table-item">
         <td>146%</td>
@@ -119,13 +126,13 @@
       </tr>
     </table>
   </div>
-  <div class="logo-list">
-    <a class="logo-item" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img class="logo-item-img" src="img/logo-html-academy.png" width="199" height="68" alt="Партнер студии Нёрдс-HTML Academy">
+  <div class="partners-list">
+    <a class="partner-item" href="https://htmlacademy.ru/intensive/htmlcss">
+      <img class="partner-item-img" src="img/logo-html-academy.png" width="199" height="68" alt="Партнер студии Нёрдс-HTML Academy">
     </a>
-    <img class="logo-item-img" src="img/logo-barbershop.png" width="209" height="90" alt="Партнер студии Нёрдс-Барбершоп Бородинский">
-    <img class="logo-item-img" src="img/logo-pink-app.png" width="185" height="52" alt="Партнер студии Нёрдс-pink App">
-    <img class="logo-item-img" src="img/logo-mishka.png" width="173" height="84" alt="Партнер студии Нёрдс-Mishka">
+    <img class="partner-item-img" src="img/logo-barbershop.png" width="209" height="90" alt="Партнер студии Нёрдс-Барбершоп Бородинский">
+    <img class="partner-item-img" src="img/logo-pink-app.png" width="185" height="52" alt="Партнер студии Нёрдс-pink App">
+    <img class="partner-item-img" src="img/logo-mishka.png" width="173" height="84" alt="Партнер студии Нёрдс-Mishka">
   </div>
 </main>
 <footer class="main-footer">
@@ -152,12 +159,12 @@
     </ul>
   </div>
   <section class="promo">
-    <p>Давайте дружить, это выгодно!</p>
+    <p class="promo-text">Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </section>
 </footer>
 
-<section clas="modal">
+<section class="modal">
   <h4>Напишите нам</h4>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>

@@ -78,8 +78,8 @@ img {
   background-color: var(--basic-extra-light);
 }
 
-.main-header-logo a:active {
-  background-color: var(--active-light);
+.main-header-logo:active {
+  color: var(--active-light);
 }
 
 .site-navigation {

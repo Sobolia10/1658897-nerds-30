@@ -25,6 +25,11 @@
 
   --special: #283136;
   --special-grey: #666666;
+  --special-input: #4D4D4D;
+  --special-triangle: #231F20;
+  --special-hover: #DFDFDF;
+  --special-active: #D5D5D5;
+  --special-border: #DBDBDB;
 }
 
 /* Global */
@@ -377,3 +382,163 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+/*header catalog*/
+
+.header-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/*filters*/
+
+.catalog-container {
+  color: var(--special);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.container-title {
+  list-style: none; /*                                    */
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black); /*насильно добавила, чтобы изменить цвет в заголовках каталога (Седона,...*/
+}
+
+.container-title:hover {
+color: var(--basic-red)
+}
+
+.container-title:active {
+  opacity: 30%;
+}
+
+.filter-button {
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-extra-light);
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  font-weight: 500;
+}
+
+.filter-button:hover,
+.click:hover {
+  background-color: var(--special-hover);
+  /*border: none;
+  outline-style: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--basic-black);    не работает*/
+}
+
+.filter-button:active {
+  background-color: var(--special-active);
+  opacity: 30%;
+  border: none;
+}
+
+.container-cost {
+  line-height: 22px;
+}
+
+.container-placeholder {
+  background-color: var(--basic-extra-light);
+  border: none;
+}
+
+.container-filter {
+  list-style: none;
+}
+
+.filter-label,
+.filter-label:hover {
+  color: var(--special);
+}
+
+.filter-label:active {
+  opacity:30%;
+}
+
+.filter-input {
+  color: var(--special-input);
+  opacity: 40%;
+}
+
+.filter-input:hover {
+  color: var(--special-input);
+}
+
+.filter-input {
+  opacity: 10%;
+}
+
+/*catalog*/
+
+.sort {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+.sort:hover{
+  opacity: 60%;
+}
+
+.triangle {
+  border: none;
+  background-color: var(--active-light);
+  opacity: 20%;
+}
+
+.triangle:hover {
+  border: none;
+  background-color: var(--active-light);
+}
+
+.triangle:active {
+  border: none;
+  background-color: var(--special-triangle);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+/*pagination*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-extra-light);
+  color: var(--basic-black);
+}
+
+.pagination-item a:hover {
+  background-color: var(--special-hover);
+}
+
+.pagination-item a:active {
+  background-color: var(--special-active);
+  opacity: 30%;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:active {
+  background-color: var(--basic-white); /*0,01$*/
+  border: var(--special-border);
+}
+
+

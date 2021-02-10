@@ -112,6 +112,10 @@ img {
     color: var(--basic-red);
   }
 
+.active-item {
+border-bottom: 1px solid var(--basic-red);
+}
+
 /* Slider-description */
 
 .slider-headline {
@@ -390,6 +394,11 @@ img {
   line-height: 55px;
 }
 
+.header-title h1 {
+  font-weight: 500;
+  font-size: 55px;
+}
+
 /*filters*/
 
 .catalog-container {
@@ -398,13 +407,20 @@ img {
   line-height: 20px;
 }
 
+.catalog-text {
+  line-height: 18px;
+  text-align: center;
+  color: #666666;
+}
+
 .container-title {
-  list-style: none; /*                                    */
+  list-style: none;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--basic-black); /*насильно добавила, чтобы изменить цвет в заголовках каталога (Седона,...*/
+  color: var(--basic-black);
+  text-align: center;
 }
 
 .container-title:hover {
@@ -438,8 +454,12 @@ color: var(--basic-red)
 
 .filter-button:active {
   background-color: var(--special-active);
-  opacity: 30%;
+  color: 0,0,0,0.3;
   border: none;
+}
+
+.container-cost span {
+  text-transform: uppercase;
 }
 
 .container-cost {
@@ -449,6 +469,7 @@ color: var(--basic-red)
 .container-placeholder {
   background-color: var(--basic-extra-light);
   border: none;
+  line-height: 22px;
 }
 
 .container-filter {
@@ -477,14 +498,23 @@ color: var(--basic-red)
   opacity: 10%;
 }
 
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
 /*catalog*/
 
 .sort {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-black);
   opacity: 30%;
+  color: var(--basic-black);
+}
+
+.sort:active,
+.active {
+  opacity: 100%;
 }
 
 .sort:hover{
@@ -523,7 +553,9 @@ color: var(--basic-red)
   text-transform: uppercase;
   background-color: var(--basic-extra-light);
   color: var(--basic-black);
-}
+  font-weight: 500;
+  line-height: 18px;
+  }
 
 .pagination-item a:hover {
   background-color: var(--special-hover);

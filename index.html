@@ -17,15 +17,17 @@
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
-    <ul class="site-navigation">
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-        <div class="basket-navigation">
-    <a class="basket-navigation" href="blank.html">Корзина</a>
-        </div>
+    <div class="navigation-wrapper">
+      <ul class="site-navigation">
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <div class="basket-navigation">
+        <a class="basket-navigation" href="blank.html">Корзина</a>
+      </div>
+    </div>
     <!--Здесь БУДЕТ СЛАЙДЕР-->
     <p><input class="slide1-button" name="slide" type="radio" value="slide1"></p>
     <p><input class="slide2-button" name="slide" type="radio" value="slide2"></p>
@@ -52,7 +54,7 @@
       <a class="button" href="blank.html">Узнать больше</a>
       <img class="slider-img" src="img/nerds-index-slide2.jpg" width="760" height="431" alt="Слайд 2">
     </section>
-    <section class="slider-descriptionn">
+    <section class="slider-description">
       <h2 class="visually-hidden">Слайд 3</h2>
       <p class="slider-headline">Только ночь, <br>
         только хардкор</p>
@@ -72,14 +74,16 @@
     <ul class="features-list">
       <li class="featured-item">
         <h3>Веб-сайты</h3>
-        <img class="features-img" src="img/illustration-web-sites.jpg" width="300" height="146" alt="Пример дизайна студии Нёрдс-веб-сайты">
+        <img class="features-img" src="img/illustration-web-sites.jpg" width="300" height="146"
+             alt="Пример дизайна студии Нёрдс-веб-сайты">
         <p>Мир никогда не будет прежним
           после того как увидит ваш сайт!</p>
         <button class="button" type="button">Заказать</button>
       </li>
       <li class="featured-item">
         <h3>Приложения</h3>
-        <img class="featured-img" src="img/illustration-apps.jpg" width="300" height="146" alt="Пример дизайна студии Нёрдс-приложения">
+        <img class="featured-img" src="img/illustration-apps.jpg" width="300" height="146"
+             alt="Пример дизайна студии Нёрдс-приложения">
         <p>Покорите топ-10 приложений <br>
           в AppStore и Google Play</p>
         <button class="button-green" type="button">Заказать</button>
@@ -94,6 +98,7 @@
       </li>
     </ul>
   </section>
+  <div class="index-columns">
   <div class="content">
     <p class="slogan">Мы — маленькая, но гордая
       дизайн-студия из Краснодара.</p>
@@ -111,9 +116,12 @@
     <p class="sidebar-headline">с 2004 года Любим точность во всем:</p>
     <table class="table-list">
       <tr class="table-item">
-        <td>146</td><td class="table-percent">%</td>
-        <td>100</td><td class="table-percent">%</td>
-        <td>50</td><td class="table-percent">%</td>
+        <td>146</td>
+        <td class="table-percent">%</td>
+        <td>100</td>
+        <td class="table-percent">%</td>
+        <td>50</td>
+        <td class="table-percent">%</td>
       </tr>
       <tr class="table-text">
         <td>Уровень самоотдачи</td>
@@ -122,24 +130,28 @@
       </tr>
     </table>
   </div>
-  <div class="partners-list">
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img class="partner-item" src="img/logo-html-academy.png" width="199" height="68" alt="Партнер студии Нёрдс-HTML Academy">
-    </a>
-    <img class="partner-item-img" src="img/logo-barbershop.png" width="209" height="90" alt="Партнер студии Нёрдс-Барбершоп Бородинский">
-    <img class="partner-item-img" src="img/logo-pink-app.png" width="185" height="52" alt="Партнер студии Нёрдс-pink App">
-    <img class="partner-item-img" src="img/logo-mishka.png" width="173" height="84" alt="Партнер студии Нёрдс-Mishka">
-  </div>
+</div>
+<div class="partners-list">
+  <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <img class="partner-item" src="img/logo-html-academy.png" width="199" height="68"
+         alt="Партнер студии Нёрдс-HTML Academy">
+  </a>
+  <img class="partner-item-img" src="img/logo-barbershop.png" width="209" height="90"
+       alt="Партнер студии Нёрдс-Барбершоп Бородинский">
+  <img class="partner-item-img" src="img/logo-pink-app.png" width="185" height="52" alt="Партнер студии Нёрдс-pink App">
+  <img class="partner-item-img" src="img/logo-mishka.png" width="173" height="84" alt="Партнер студии Нёрдс-Mishka">
+</div>
 </main>
 <footer class="main-footer">
   <div class="footer-contacts">
-    <img class="contacts-map"  src="img/map.jpg" width="1440" height="416" alt="Местонахождение студии Нёрдс">
-    <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190" alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Местонахождение студии Нёрдс">
+    <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190"
+         alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     <p class="contacts-caption">NЁRDS DESIGN STUDIO</p>
     <p class="contacts-adress">191186, Санкт-Петербург,
       ул. Б. Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
-      <a class="button" href="blank.html">Напишите нам</a>
+    <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+    <a class="button" href="blank.html">Напишите нам</a>
   </div>
   <div class="footer-social">
     <ul>

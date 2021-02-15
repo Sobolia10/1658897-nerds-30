@@ -17,14 +17,16 @@
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
-    <ul class="site-navigation">
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a class="active-item" href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <div class="basket-navigation">
-      <a class="basket-navigation" href="blank.html">Корзина</a>
+    <div class="navigation-wrapper">
+      <ul class="site-navigation">
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <div class="basket-navigation">
+        <a class="basket-navigation" href="blank.html">Корзина</a>
+      </div>
     </div>
   </nav>
   <div class="header-title">
@@ -95,6 +97,7 @@
     </form>
   </section>
   <section class="catalog">
+    <div class="catalog-sort">
     <span class="container-title">Сортировать:</span>
     <a class="sort active" href="blank.html">по цене</a>
     <a class="sort" href="blank.html">по типу</a>
@@ -103,6 +106,8 @@
       <button class="triangle" type="button">по возрастанию</button>
       <button class="triangle" type="button">по убыванию</button>
     </span>
+    </div>
+    <div class="catalog-list">
     <ul class="catalog-list">
       <li class="catalog-item">
         <img src="img/mask-group-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
@@ -173,6 +178,7 @@
         </div>
       </li>
     </ul>
+    </div>
     <ul class="pagination-list">
       <li class="pagination-item pagination-item-current">
         <a href="#">1</a>
@@ -189,54 +195,58 @@
     </ul>
   </section>
 </main>
-<footer>
+<footer class="main-footer">
   <div class="footer-contacts">
     <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Местонахождение студии Нёрдс">
     <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190"
          alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-    <p class="contacts-caption">NЁRDS DESIGN STUDIO</p>
-    <p class="contacts-adress">191186, Санкт-Петербург,
-      ул. Б. Конюшенная, д. 19/8</p>
-    <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
-    <a class="button" href="blank.html">Напишите нам</a>
+    <div class="footer-main-contacts">
+      <p class="contacts-caption">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts-adress">191186, Санкт-Петербург,
+        ул. Б. Конюшенная, д. 19/8</p>
+      <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+      <a class="button" href="blank.html">Напишите нам</a>
+    </div>
   </div>
-  <div class="footer-social">
-    <ul>
-      <li>
-        <a class="social-button" href="#"><img src="img/icon-vk.svg" width="27" height="15" alt="Vkontakte"></a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
-      </li>
-    </ul>
+  <div class="footer-elements">
+    <div class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button" href="#"><img src="img/icon-vk.svg" width="27" height="15" alt="Vkontakte"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="promo">
+      <p class="promo-text">Давайте дружить, это выгодно!</p>
+      <p class="promo-text+p">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </div>
-  <section class="promo">
-    <p class="promo-text">Давайте дружить, это выгодно!</p>
-    <p class="promo-text+p">Скидка 10% для друзей из социальных сетей.</p>
-  </section>
 </footer>
 
-<section>
+<section class="modal">
   <h4>Напишите нам</h4>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label for="user-field-id">Ваше имя:</label>
-      <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
+      <input class="modal-icon-user" id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
     </p>
     <p>
       <label for="email-email">Ваш email:</label>
-      <input id="email-email" type="email" name="email" placeholder="email@example.com">
+      <input class="modal-icon-password" id="email-email" type="email" name="email" placeholder="email@example.com">
     </p>
     <p>
       <label for="text-text">Текст письма</label>
-      <input id="text-text" type="text" name="text" placeholder="В свободной форме">
+      <input class="modal-icon-text" id="text-text" type="text" name="text" placeholder="В свободной форме">
     </p>
-    <button type="submit">Отправить</button>
+    <button class="button" type="submit">Отправить</button>
   </form>
-  <button type="button">Закрыть</button>
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 </body>
 </html>

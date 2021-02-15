@@ -357,7 +357,7 @@ img {
   background-color: var(--active-extra-dark-red);
 }
 
-.contacts-adress,
+.contacts-address,
 .contacts-phone {
   line-height: 18px;
   color: var(--special-grey);

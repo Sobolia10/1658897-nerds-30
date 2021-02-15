@@ -273,6 +273,10 @@ img {
   color: var(--special);
 }
 
+.numbers {
+  width:50px;
+}
+
 /*partners*/
 
 .partner-item {

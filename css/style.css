@@ -507,7 +507,8 @@ img {
 
 .catalog-sort {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  margin-bottom: 48px;
 }
 
 .catalog-text {

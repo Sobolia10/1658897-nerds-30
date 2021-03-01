@@ -37,18 +37,30 @@
   <section class="filters">
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend class="container-title">Стоимость:</legend>
-        <input type="range" id="range-cost" name="cost"
-               min="0" max="15000"/>
-        <div class="container-cost">
-          <span>от</span>
-          <input class="container-placeholder" type=search placeholder="0">
-          <span>до</span>
-          <input class="container-placeholder" type=search placeholder="15 000">
+
+
+
+      <fieldset class="filter-cost">
+        <legend class="container-title cost">Стоимость:</legend>
+        <div class="line">
+        <div class="cost-line">
+          <div class="cost-scale" style="width: 67%;"></div>
         </div>
+        <div class="cost-button min"></div>
+        <div class="cost-button max"></div>
+        </div>
+        <div class="placeholder-cost">
+          <label>
+            от <input class="container-placeholder" type="text" value="0">
+          </label>
+          <label>
+            до <input class="container-placeholder" type="text" value="15 000">
+          </label>
+        </div>
+
+
       </fieldset>
-      <fieldset>
+      <fieldset class="filter-box">
         <legend class="container-title">Сетка:</legend>
         <ul class="container-filter">
           <li>
@@ -65,7 +77,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="filter-box">
         <legend class="container-title">Особенности:</legend>
         <ul class="container-filter">
           <li>
@@ -102,13 +114,14 @@
     <a class="sort" href="blank.html">по типу</a>
     <a class="sort" href="blank.html">по названию</a>
     <span>
-      <button class="triangle triangle-current" type="button">по возрастанию</button>
-      <button class="triangle" type="button">по убыванию</button>
+      <button class="triangle triangle-current" type="button">по убыванию</button>
+      <button class="triangle" type="button">по возрастанию</button>
     </span>
     </div>
-    <div class="catalog.filter-label-list">
+    <div class="catalog">
     <ul class="catalog-list">
-      <li class="catalog-item">
+      <li class="catalog-item current">
+        <span></span>
         <img src="img/mask-group-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
         <div class="catalog-block">
           <a href="blank.html">
@@ -119,7 +132,8 @@
           <button class="button" type="button">9 900 ₽</button>
         </div>
       </li>
-      <li class="catalog-item">
+      <li class="catalog-item odd">
+        <span></span>
         <img src="img/mask-group-pink-app.jpg" width="358" height="578" alt="Шаблон Pink app">
         <div class="catalog-block">
           <a href="blank.html">
@@ -131,6 +145,7 @@
         </div>
       </li>
       <li class="catalog-item">
+        <span></span>
         <img src="img/mask-group-barbershop.jpg" width="358" height="578" alt="Шаблон Барбершоп Бородинский">
         <div class="catalog-block">
           <a href="blank.html">
@@ -141,7 +156,8 @@
           <button class="button" type="button">9 900 ₽</button>
         </div>
       </li>
-      <li class="catalog-item">
+      <li class="catalog-item odd">
+        <span></span>
         <img src="img/mask-group-mishka.jpg" width="358" height="578" alt="Шаблон Mishka">
         <div class="catalog-block">
           <a href="blank.html">
@@ -154,6 +170,7 @@
         </div>
       </li>
       <li class="catalog-item">
+        <span></span>
         <img src="img/mask-group-aplus.jpg" width="358" height="578" alt="Шаблон A Plus">
         <div class="catalog-block">
           <a href="blank.html">
@@ -164,7 +181,8 @@
           <button class="button" type="button">9 900 ₽</button>
         </div>
       </li>
-      <li class="catalog-item">
+      <li class="catalog-item odd">
+        <span></span>
         <img src="img/mask-group-kvast.jpg" width="358" height="578" alt="Шаблон Кваст">
         <div class="catalog-block">
           <a href="blank.html">
@@ -195,10 +213,12 @@
   </section>
 </main>
 <footer class="main-footer">
+
   <div class="footer-contacts">
     <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Местонахождение студии Нёрдс">
     <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190"
          alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+
     <div class="footer-main-contacts">
       <p class="contacts-caption">NЁRDS DESIGN STUDIO</p>
       <p class="contacts-adress">191186, Санкт-Петербург,
@@ -206,7 +226,9 @@
       <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
       <a class="button" href="blank.html">Напишите нам</a>
     </div>
+
   </div>
+
   <div class="footer-elements">
     <div class="footer-social">
       <ul>

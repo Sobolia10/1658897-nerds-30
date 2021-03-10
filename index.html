@@ -194,23 +194,25 @@
 </footer>
 
 <section class="modal">
+  <div class="modal-title">
   <h4>Напишите нам</h4>
+  <button class="modal-close" type="button">✕</button>
+  </div>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
+    <p class="login-item login-item-user">
       <label for="user-field-id">Ваше имя:</label>
       <input class="modal-icon-user" id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
     </p>
-    <p>
+    <p class="login-item login-item-email">
       <label for="email-email">Ваш email:</label>
       <input class="modal-icon-password" id="email-email" type="email" name="email" placeholder="email@example.com">
     </p>
-    <p>
-      <label for="text-text">Текст письма</label>
+    <p class="login-item login-item-text">
+      <label for="text-text">Текст письма:</label>
       <input class="modal-icon-text" id="text-text" type="text" name="text" placeholder="В свободной форме">
     </p>
-    <button class="button" type="submit">Отправить</button>
+    <button class="button letter" type="submit">Отправить</button>
   </form>
-  <button class="modal-close" type="button">Закрыть</button>
 </section>
 </body>
 </html>

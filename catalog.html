@@ -17,19 +17,19 @@
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
-    <div class="navigation-wrapper">
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <div class="basket-navigation">
-        <a class="basket-navigation" href="blank.html">
-          <img class="icon-basket" src="img/cart-icon.png" width="15" height="15" alt="Корзина магазина Студии Нёрдс">
-          Корзина
-        </a>
-      </div>
+    <!--    <div class="navigation-wrapper">-->
+    <ul class="site-navigation">
+      <li><a href="blank.html">Студия</a></li>
+      <li><a href="blank.html">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+    <div class="basket-navigation">
+      <a class="basket-navigation" href="blank.html">
+        <img class="icon-basket" src="img/cart-icon.png" width="15" height="15" alt="Корзина магазина Студии Нёрдс">
+        Корзина
+      </a>
+<!--      </div>-->
     </div>
   </nav>
   <div class="header-title">
@@ -112,13 +112,15 @@
   <section class="catalog">
     <div class="catalog-sort">
     <span class="catalog-sort-title">Сортировать:</span>
-    <a class="sort active" href="blank.html">по цене</a>
-    <a class="sort" href="blank.html">по типу</a>
-    <a class="sort" href="blank.html">по названию</a>
-    <span>
-      <button class="triangle triangle-current" type="button">по убыванию</button>
-      <button class="triangle" type="button">по возрастанию</button>
-    </span>
+      <div class="sort-name">
+        <a class="sort current" href="blank.html">по цене</a>
+        <a class="sort" href="blank.html">по типу</a>
+        <a class="sort" href="blank.html">по названию</a>
+      </div>
+    <div triangle-set>
+      <a href=""><div class="triangle down"></div></a>
+      <a href=""><div class="triangle up"></div></a>
+    </div>
     </div>
     <div class="catalog">
     <ul class="catalog-list">
@@ -246,13 +248,13 @@
   <div class="footer-elements">
     <div class="footer-social">
       <ul>
-        <li>
-          <a class="social-button" href="#"><img src="img/icon-vk.svg" width="27" height="15" alt="Vkontakte"></a>
+        <li class="social-button">
+          <a href="#"><img src="img/icon-vk.svg" width="27" height="15" alt="Vkontakte"></a>
         </li>
-        <li>
+        <li class="social-button">
           <a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
         </li>
-        <li>
+        <li class="social-button">
           <a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
         </li>
       </ul>
@@ -265,23 +267,25 @@
 </footer>
 
 <section class="modal">
-  <h4>Напишите нам</h4>
+  <div class="modal-title">
+    <h4>Напишите нам</h4>
+    <button class="modal-close" type="button">✕</button>
+  </div>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
+    <p class="login-item login-item-user">
       <label for="user-field-id">Ваше имя:</label>
       <input class="modal-icon-user" id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
     </p>
-    <p>
+    <p class="login-item login-item-email">
       <label for="email-email">Ваш email:</label>
       <input class="modal-icon-password" id="email-email" type="email" name="email" placeholder="email@example.com">
     </p>
-    <p>
-      <label for="text-text">Текст письма</label>
+    <p class="login-item login-item-text">
+      <label for="text-text">Текст письма:</label>
       <input class="modal-icon-text" id="text-text" type="text" name="text" placeholder="В свободной форме">
     </p>
-    <button class="button" type="submit">Отправить</button>
+    <button class="button letter" type="submit">Отправить</button>
   </form>
-  <button class="modal-close" type="button">Закрыть</button>
 </section>
 </body>
 </html>

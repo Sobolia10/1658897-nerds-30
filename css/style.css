@@ -308,8 +308,7 @@ img {
 }
 
 .feature-item p {
-  margin: 0 10px;
-  margin-bottom: 32px;
+  margin: 0 10px 32px;
 }
 
 .features-list h3 {

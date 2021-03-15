@@ -36,7 +36,7 @@
 
   <section class="slider">
     <div class="slider-controls">
-      <button class="current" type="button" aria-label="Первый слайд"></button>
+      <button class="first-button" type="button" aria-label="Первый слайд"></button>
       <button type="button" aria-label="Второй слайд"></button>
       <button type="button" aria-label="Третий слайд"></button>
     </div>
@@ -109,16 +109,18 @@
   </section>
   <div class="index-columns">
     <div class="content">
-      <p class="slogan">Мы — маленькая, но гордая
-        дизайн-студия из Краснодара.</p>
+      <div class="slogan">Мы — маленькая, но гордая
+        дизайн-студия из Краснодара.</div>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p class="benefits-list">Выполняем заказы на разработку:</p>
+      <div class="benefits-list-title">Выполняем заказы на разработку:</div>
+    <div class="benefits-list">
       <ul>
         <li class="benefits-item">Веб-сайтов любой сложности</li>
         <li class="benefits-item">Мобильных приложений для iOS и Android</li>
         <li class="benefits-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
+    </div>
     </div>
     <div class="sidebar">
       <img class="sidebar-img" src="img/nerds-illustration1.jpg" width="360" height="208"
@@ -196,7 +198,7 @@
 <section class="modal">
   <div class="modal-title">
   <h4>Напишите нам</h4>
-  <button class="modal-close" type="button">✕</button>
+    <button class="modal-close"><img src="img/close-cross.png" width="21px" height="21px" alt="Закрыть"></button>
   </div>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p class="login-item login-item-user">

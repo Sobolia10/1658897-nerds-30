@@ -111,23 +111,33 @@
   </section>
   <section class="catalog">
     <div class="catalog-sort">
-    <span class="catalog-sort-title">Сортировать:</span>
+    <div class="catalog-sort-title">Сортировать:</div>
       <div class="sort-name">
         <a class="sort current" href="blank.html">по цене</a>
         <a class="sort" href="blank.html">по типу</a>
         <a class="sort" href="blank.html">по названию</a>
       </div>
     <div triangle-set>
-      <a href=""><div class="triangle down"></div></a>
-      <a href=""><div class="triangle up"></div></a>
+      <a href="triangle down">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 10L0 0H11" fill="#231F20"/>
+        </svg>
+      </a>
+      <a href="triangle up">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.2">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+          </g>
+        </svg>
+      </a>
     </div>
     </div>
     <div class="catalog">
     <ul class="catalog-list">
       <li class="catalog-item">
-         <span>
+        <div class="catalog-span">
         <img src="img/browser-dark.svg" width="360" height="40" alt="Переключатель шаблона Sedona">
-        </span>
+        </div>
         <img src="img/mask-group-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
         <div class="catalog-block">
           <a href="blank.html">
@@ -139,9 +149,9 @@
         </div>
       </li>
       <li class="catalog-item odd">
-        <span>
+        <div class="catalog-span">
         <img src="img/browser-dark.svg" width="360" height="40" alt="Переключатель шаблона Pink app">
-        </span>
+        </div>
         <img src="img/mask-group-pink-app.jpg" width="358" height="578" alt="Шаблон Pink app">
         <div class="catalog-block">
           <a href="blank.html">
@@ -153,9 +163,9 @@
         </div>
       </li>
       <li class="catalog-item">
-        <span>
+        <div class="catalog-span">
         <img src="img/browser-dark.svg" width="360" height="40" alt="Переключатель шаблона Барбершоп Бородинский">
-        </span>
+        </div>
         <img src="img/mask-group-barbershop.jpg" width="358" height="578" alt="Шаблон Барбершоп Бородинский">
         <div class="catalog-block">
           <a href="blank.html">
@@ -167,9 +177,9 @@
         </div>
       </li>
       <li class="catalog-item odd">
-         <span>
+        <div class="catalog-span">
         <img src="img/browser-dark.svg" width="360" height="40" alt="Переключатель шаблона Mishka">
-        </span>
+        </div>
         <img src="img/mask-group-mishka.jpg" width="358" height="578" alt="Шаблон Mishka">
         <div class="catalog-block">
           <a href="blank.html">
@@ -182,9 +192,9 @@
         </div>
       </li>
       <li class="catalog-item">
-        <span>
+        <div class="catalog-span">
         <img src="img/browser-dark.svg" width="360" height="40" alt="Переключатель шаблона A Plus">
-        </span>
+        </div>
         <img src="img/mask-group-aplus.jpg" width="358" height="578" alt="Шаблон A Plus">
         <div class="catalog-block">
           <a href="blank.html">
@@ -196,9 +206,9 @@
         </div>
       </li>
       <li class="catalog-item odd">
-         <span>
+        <div class="catalog-span">
         <img src="img/browser-dark.svg" width="360" height="40" alt="Переключатель шаблона Кваст">
-        </span>
+        </div>
         <img src="img/mask-group-kvast.jpg" width="358" height="578" alt="Шаблон Кваст">
         <div class="catalog-block">
           <a href="blank.html">
@@ -222,7 +232,7 @@
       <li class="pagination-item">
         <a href="#">3</a>
       </li>
-      <li class="pagination-item">
+      <li class="pagination-item pagination-item-next">
         <a href="#">Следующая</a>
       </li>
     </ul>

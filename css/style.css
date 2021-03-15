@@ -863,7 +863,6 @@ grid-template-columns: 1fr 1fr;*/
   text-transform: uppercase;
   margin-bottom: 16px;
   color: var(--basic-black);
-  margin-bottom: 3px;
 }
 
 .filter-button {

@@ -75,11 +75,11 @@ img {
   display: block;
   width: 240px;
   height: 50px;
-  /*padding-top: 17px;  */
-  padding-top: 15px;
+  padding-top: 17px;
+  border-radius: 3px;
   box-sizing: border-box;
   border-radius: 3px;
-  margin-bottom: 67px;
+  margin-bottom: 50px;
 }
 
 .button:active,
@@ -104,7 +104,7 @@ img {
   /*padding: 0;*/
   margin: auto;
   display: grid;
-  grid-template-columns: 160px 557px auto;
+  grid-template-columns: 160px 437px auto;
   justify-content: space-between;
   /*width: 100%;*/
   /*margin: 0 auto;*/
@@ -285,9 +285,9 @@ img {
 .features {
   /*height: 507px;
   margin-bottom: 73px;*/
-  margin: 80px auto 75px;
+  margin: 80px auto 0;
   width: 1160px;
-  /*padding-bottom: 80px;*/
+  padding-bottom: 80px;
   border-bottom: 1px solid var(--basic-extra-light);
 }
 
@@ -396,11 +396,23 @@ img {
 .benefits-list ul {
   margin: 0;
   padding: 1px 0 0 35px;
+  list-style: none;
 }
 
 .benefits-item {
   margin-right: 10px;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.benefits-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  left: -32px;
+  background: var(--basic-red);
+  top: 12px;
 }
 
 /*sidebar*/
@@ -550,6 +562,8 @@ grid-template-columns: 1fr 1fr;*/
   position: relative;
   width: 100%;
   margin-top: 60px;
+  max-width: 1440px;
+  margin: auto;
   /*width: 319px;*/
   /*height: 308px;*/
   /*padding: 981px 54px 140px 54px;*/
@@ -616,8 +630,7 @@ grid-template-columns: 1fr 1fr;*/
 
 .footer-social ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   width: 261px;
   padding-left: 0;
 }
@@ -633,9 +646,9 @@ grid-template-columns: 1fr 1fr;*/
   border-radius: 50%;
 }
 
-/*.social-button a {*/
-/*  padding: 33px;*/
-/*}*/
+.social-button {
+  margin: auto;
+}
 
 .social-button:hover {
   background-color: var(--active-dark-red);
@@ -674,8 +687,11 @@ grid-template-columns: 1fr 1fr;*/
   background-position: 0 0;
   width: 960px;
   height: 590px;
-  left: 240px;
   top: 1705px;
+  background: var(--basic-white);
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .modal h4 {
@@ -755,7 +771,10 @@ grid-template-columns: 1fr 1fr;*/
   width: 259px;
   height: 50px;
   padding: 3px 0 0 3px;
-  margin: 24px 0 0 0;
+  margin-top: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 15px;
 }
 
 .login-form {
@@ -1115,25 +1134,8 @@ grid-template-columns: 1fr 1fr;*/
 }
 
 .triangle.up {
-  /*width: 0;*/
-  /*height: 0;*/
-  /*border-left: 8px solid transparent;*/
-  /*border-right: 8px solid transparent;*/
-  /*border-bottom: 15px solid var(--active-light);*/
-  /*opacity: 20%;*/
-  /*margin-right: 0;*/
   padding-left: 18px;
 }
-
-/*.triangle.down {*/
-  /*width: 0;*/
-  /*height: 0;*/
-  /*border-left: 8px solid transparent;*/
-  /*border-right: 8px solid transparent;*/
-  /*border-top: 15px solid var(--special-triangle);*/
-  /*opacity: 100%;*/
-  /*margin-right: 18px;*/
-/*}*/
 
 /*.triangle:hover {*/
 /*  opacity: 100%;*/
@@ -1150,10 +1152,6 @@ grid-template-columns: 1fr 1fr;*/
   margin: 0;
   height: 18px;
   padding: 0;
-}
-
-.triangle-set a {
-  padding-top: 4px;
 }
 
 /*Шаблоны*/
@@ -1309,6 +1307,8 @@ grid-template-columns: 1fr 1fr;*/
   padding-top: 34px;
   padding-bottom: 65px;
   border-bottom: 1px solid var(--basic-extra-light);
+  max-width: 1160px;
+  margin: auto;
 }
 
 /*@keyframes slider-description {

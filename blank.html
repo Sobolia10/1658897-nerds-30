@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>blank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple.png">
@@ -11,48 +12,59 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-<header>
-  <nav>
-    <a href="index.html">
+<body class="body">
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
-    <ul>
-      <li><a href="blank.html">Студия</a></li>
+    <ul class="site-navigation">
+      <li><a href="index.html">Студия</a></li>
       <li><a href="blank.html">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="blank.html">Контакты</a></li>
     </ul>
-    <a href="blank.html">Корзина</a>
+    <div class="basket-navigation">
+      <a class="basket-navigation" href="blank.html">
+        <img class="icon-basket" src="img/cart-icon.png" width="15" height="15" alt="Корзина магазина Студии Нёрдс">
+        Корзина
+      </a>
+    </div>
   </nav>
 </header>
-<footer>
-  <div>
-    <img src="img/map.jpg" width="1440" height="416" alt="Местонахождение студии Нёрдс">
-    <img src="img/map-marker.png" width="231" height="190" alt="Где находится студии Нёрдс">
-    <p>NЁRDS DESIGN STUDIO</p>
-    <p>191186, Санкт-Петербург,
-      ул. Б. Конюшенная, д. 19/8
-      <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-      <a href="blank.html">Напишите нам</a>
+
+<footer class="main-footer">
+  <div class="footer-contacts">
+    <img class="contacts-map" src="img/map.jpg" width="1440" height="416" alt="Местонахождение студии Нёрдс">
+    <img class="contacts-map-marker" src="img/map-marker.png" width="231" height="190"
+         alt="Карта офиса по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <div class="footer-main-contacts">
+      <p class="contacts-caption">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts-address">191186, Санкт-Петербург, <br>
+        ул. Б. Конюшенная, д. 19/8</p>
+      <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+      <a class="button contacts" href="blank.html">Напишите нам</a>
+    </div>
   </div>
-  <div>
-    <ul>
-      <li>
-        <a href="#"><img src="img/icon-vk.png" width="27" height="15" alt="Vkontakte"></a>
-      </li>
-      <li>
-        <a href="#"><img src="img/icon-fb.png" width="12" height="22" alt="Facebook"></a>
-      </li>
-      <li>
-        <a href="#"><img src="img/icon-insta.png" width="21" height="21" alt="Instagram"></a>
-      </li>
-    </ul>
+  <div class="footer-elements">
+    <div class="footer-social">
+      <ul>
+        <li class="social-button">
+          <a href="#"><img src="img/icon-vk.svg" width="27" height="15" alt="Vkontakte"></a>
+        </li>
+        <li class="social-button">
+          <a class="social-button" href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
+        </li>
+        <li class="social-button">
+          <a class="social-button" href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="promo">
+      <p class="promo-text">Давайте дружить, это выгодно!</p>
+      <p class="promo-text+p">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </div>
-  <section>
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
-  </section>
 </footer>
 </body>
 </html>

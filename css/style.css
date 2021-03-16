@@ -270,7 +270,8 @@ img {
 }
 
 .first-button {
-  border: 2px solid var(--special-button);
+  /*border: 2px solid var(--special-button);*/
+  box-shadow: 0 2px 2px 0 var(--special-cost);
   cursor: pointer;
 }
 
@@ -627,24 +628,31 @@ grid-template-columns: 1fr 1fr;*/
 .footer-social ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 261px;
   padding-left: 0;
 }
 
-.social-buttons li {
+.social-button {
   width: 81px;
   height: 81px;
   margin-right: 9px;
   background-color: var(--basic-light);
   color: var(--basic-white);
   text-align: center;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   border-radius: 50%;
-}
-
-.social-button {
   margin: auto;
 }
+
+.footer-social img {
+  padding-top: 30px;
+}
+
+/*.social-button a {*/
+/*  padding-top: 30px;*/
+/*}*/
 
 .social-button:hover {
   background-color: var(--active-dark-red);
@@ -677,7 +685,7 @@ grid-template-columns: 1fr 1fr;*/
 /*modal*/
 
 .modal {
-  display: none;
+  /*display: none;*/
   position: absolute;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background-position: 0 0;
@@ -974,12 +982,13 @@ grid-template-columns: 1fr 1fr;*/
   text-transform: uppercase;
 }
 
-.container-title.cost {
+.container-title .cost {
   margin-bottom: 48px;
 }
 
 .range-filter {
   width: 260px;
+  padding-top: 32px;
 }
 
 .filter-item legend {
@@ -1000,18 +1009,18 @@ grid-template-columns: 1fr 1fr;*/
   border-radius: 5px;
 }
 
-.range-controls.cost-scale {
+.range-controls .cost-scale {
   height: 2px;
   background-color: var(--special-scale);
 }
 
-.range-controls.bar {
-  width: 70%;
+.range-controls .bar {
+  width: 62%;
   height: 2px;
   background-color: var(--special-green);
 }
 
-.range-controls.toggle {
+.range-controls .toggle {
   position: absolute;
   top: 29px;
   left: 0;
@@ -1024,11 +1033,11 @@ grid-template-columns: 1fr 1fr;*/
   cursor: pointer;
 }
 
-.range-controls.toggle-min {
+.range-controls .toggle-min {
   left: 18px;
 }
 
-.range-controls.toggle-max {
+.range-controls .toggle-max {
   left: 160px;
 }
 
@@ -1129,8 +1138,14 @@ grid-template-columns: 1fr 1fr;*/
   padding: 0;
 }
 
-.triangle.up {
+.triangle-up {
   padding-left: 18px;
+}
+
+.triangle-up,
+.triangle-down {
+  width: 11px;
+  height: 10px;
 }
 
 /*.triangle:hover {*/
@@ -1143,11 +1158,11 @@ grid-template-columns: 1fr 1fr;*/
 /*}*/
 
 .triangle-set {
-  display: inline-block;
+  display: inline;
   flex-direction: row;
   margin: 0;
-  height: 18px;
   padding: 0;
+  width: 40px;
 }
 
 /*Шаблоны*/
@@ -1186,7 +1201,7 @@ grid-template-columns: 1fr 1fr;*/
   opacity: 0.12;
 }
 
-.catalog-item span:hover {
+.catalog-span:hover {
   color: var(--special-input);
   opacity: 1;
 }
@@ -1239,7 +1254,6 @@ grid-template-columns: 1fr 1fr;*/
   grid-template-columns: 20px 20px 20px 20px;*/
   margin-top: 36px;
 }
-
 
 
 .pagination-item a {

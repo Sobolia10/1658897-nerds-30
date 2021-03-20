@@ -272,13 +272,20 @@ img {
 }
 
 .features {
-  /*height: 507px;
-  margin-bottom: 73px;*/
   margin: 80px auto 75px;
   width: 1160px;
   margin-bottom: 0;
   padding-bottom: 80px;
   border-bottom: 1px solid var(--basic-extra-light);
+}
+
+@media (max-width: 1200px) {
+  .features {
+    margin: 80px 30px 0;
+    width: 1160px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--basic-extra-light);
+  }
 }
 
 .features-list {
@@ -489,12 +496,11 @@ img {
   padding-top: 16px;
 
   /*margin-bottom: 20px;*/
-  /*width: 298px;*/
+  /*min-width: 298px;*/
   /*align-items: center;*/
 }
 
 .partners-list li {
-
   display: contents;
 }
 
@@ -520,6 +526,7 @@ img {
 
 .html-academy{
   padding-right: 20px;
+  min-width: 199px;
 }
 
 .barber{
@@ -953,36 +960,36 @@ grid-template-columns: 1fr 1fr;*/
   color: rgba(0, 0, 0, 0.3);
 }
 
-.filter-label,
-.filter-label:hover {
+.container-filter label,
+.container-filter label:hover {
   color: var(--special);
   margin-left: 19px;
 }
 
-.filter-label:active {
-  opacity: 30%;
+.container-filter label:disabled {
+  opacity: 0.3;
 }
+
+/*.filter-label:active {*/
+/*  opacity: 30%;*/
+/*}*/
 
 .filter-label.fixed {
   padding-top: 20px;
   padding-bottom: 18px;
 }
 
-.filter-input {
+.container-filter input {
   color: var(--special-input);
   opacity: 40%;
 }
 
-.filter-input:hover {
+.container-filter input:hover {
   color: var(--special-input);
 }
 
-.filter-input {
+.container-filter input:disabled {
   opacity: 10%;
-}
-
-.filter-input:disabled + label {
-  opacity: 0.3;
 }
 
 .filter-box {
@@ -1369,7 +1376,7 @@ grid-template-columns: 1fr 1fr;*/
 .index-columns {
   display: flex;
   justify-content: space-between;
-  margin: auto 130px auto 131px;
+  margin: auto;
   padding-top: 34px;
   padding-bottom: 49px;
   border-bottom: 1px solid var(--basic-extra-light);

@@ -710,6 +710,7 @@ grid-template-columns: 1fr 1fr;*/
   background: var(--basic-white);
   right: 0;
   margin: auto;
+  left: 0;
 }
 
 .modal h4 {
@@ -827,6 +828,9 @@ grid-template-columns: 1fr 1fr;*/
   resize: none;
   margin-top: 34px;
   padding-left: 14px;
+  padding-top: 14px;
+  box-sizing: border-box;
+  border: 2px solid var(--active-grey);
 }
 
 .login-item-text textarea {
@@ -838,8 +842,8 @@ grid-template-columns: 1fr 1fr;*/
 .login-item-user input {
   height: 50px;
   width: 360px;
-  padding-top: 14px;
   padding-left: 14px;
+  box-sizing: border-box;
 }
 
 /*.login-item-text {*/
@@ -1196,13 +1200,6 @@ grid-template-columns: 1fr 1fr;*/
   border-collapse: collapse;
 }
 
-.catalog-list button {
-  /*margin: 32px 80px 44px 80px;*/
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-}
-
 .catalog-item {
   display: block;
   position: relative;
@@ -1253,15 +1250,32 @@ grid-template-columns: 1fr 1fr;*/
   line-height: 18px;
   text-align: center;
   color: var(--special-grey);
+  margin-bottom: 32px;
+  max-width: 255px;
 }
 
 .catalog-block {
   /*visibility: hidden;*/
   background: var(--basic-extra-light);
   height: 231px;
-  width: 360px;
+  width: 358px;
   display: block;
   position: absolute;
+  top:387px;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  border: 1px solid var(--basic-black);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  padding: 0;
+}
+
+.catalog-block h3 {
+  margin-bottom: 13px;
+}
+
+.catalog-block button {
+  align-items: center;
+  padding: 0;
 }
 
 /*Кнопки под шаблонами*/
@@ -1276,7 +1290,6 @@ grid-template-columns: 1fr 1fr;*/
   grid-template-columns: 20px 20px 20px 20px;*/
   margin-top: 36px;
 }
-
 
 .pagination-item a {
   text-align: center;

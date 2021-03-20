@@ -478,10 +478,8 @@ img {
   justify-content: space-between;
   height: 177px;
   align-items: center;
-  /*margin-bottom: 100px;*/
   border-bottom: 1px solid var(--basic-extra-light);
-  max-width: 1095px;
-  /*margin-top: 20px;*/
+  max-width: 1160px;
   list-style: none;
   padding: 0;
   margin: 5px auto;
@@ -490,7 +488,7 @@ img {
 
 .partner-item {
   opacity: 20%;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-top: 16px;
 
   /*margin-bottom: 20px;*/
@@ -522,18 +520,23 @@ img {
   /*align-items: center;*/
 }
 
-.html-academy{
-  padding-right: 20px;
+html-academy{
+  padding-right: 5px;
+  margin-left: 25px;
   min-width: 199px;
 }
 
 .barber{
-  margin-left: 13px;
-  padding-right: 13px;
+  margin-left: 10px;
+  padding-right: 5px;
 }
 
 .pink {
-  padding-right: 28px;
+  padding-right: 15px;
+  margin-left: 25px;
+}
+.mishka {
+  margin-right: 40px;
 }
 
 .partner-item:hover {

@@ -258,11 +258,10 @@ img {
 
   vertical-align: middle;
   display: inline-block;
-  margin: 0;
   top: 338px;
   left: 535px;
   padding: 0;
-  margin-right: 15px;
+  margin: 0 15px 0 0;
 }
 
 /* Features */
@@ -273,9 +272,8 @@ img {
 }
 
 .features {
-  margin: 80px auto 75px;
   width: 1160px;
-  margin-bottom: 0;
+  margin: 80px auto 0;
   padding-bottom: 80px;
   border-bottom: 1px solid var(--basic-extra-light);
 }
@@ -502,7 +500,7 @@ img {
   display: contents;
 }
 
-.partners-list li:last-child{
+.partners-list li:last-child {
   margin-left: 50px;
 }
 
@@ -537,6 +535,7 @@ img {
   padding-right: 15px;
   margin-left: 25px;
 }
+
 .mishka {
   margin-right: 40px;
 }
@@ -794,11 +793,10 @@ grid-template-columns: 1fr 1fr;*/
   display: block;
   width: 259px;
   height: 50px;
-  padding: 17px 0 0 3px;
   margin-top: 47px;
   margin-left: 0;
   margin-right: 1px;
-  padding-bottom: 15px;
+  padding: 17px 0 15px 3px;
 }
 
 .login-form {
@@ -874,11 +872,10 @@ grid-template-columns: 1fr 1fr;*/
 .header-title h1 {
   font-size: 55px;
   line-height: 55px;
-  margin: 0;
   padding-top: 104px;
   padding-bottom: 107px;
   text-align: center;
-  margin-bottom: 55px;
+  margin: 0 0 55px;
 }
 
 /*.header-title {*/
@@ -910,24 +907,17 @@ grid-template-columns: 1fr 1fr;*/
 .container-filter {
   list-style: none;
   padding: 0;
-  margin: 0;
-  line-height: 2.4;
+  margin: 0 0 0 35px;
+  line-height: 2.5;
 }
-
-.filter-input{
-  width: 25px;
-  height: 25px;
-}
-
 
 .container-title {
   padding: 0;
-  margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin: 0 0 7px;
   color: var(--basic-black);
 }
 
@@ -957,90 +947,134 @@ grid-template-columns: 1fr 1fr;*/
   color: rgba(0, 0, 0, 0.3);
 }
 
-.container-filter label,
-.container-filter label:hover {
-  color: var(--special);
-  margin-left: 8px;
-}
-
-.container-filter label:disabled {
-  opacity: 0.3;
-}
 
 /*Кнопки фильтрыа выбора*/
 
-.filter-input + label::before {
-  content: "";
-  position: absolute;
-  left: -42px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
+
+/*.container-filter {*/
+/*  opacity: 40%;*/
+/*}*/
+
+/*.container-filter input:hover {*/
+/*  color: var(--special-input);*/
+/*}*/
+
+/*.container-filter input:disabled {*/
+/*  opacity: 10%;*/
+/*}*/
+
+.filter-box {
+  border: none;
+  padding: 0;
+  margin: 0 0 35px;
 }
 
-.filter-input:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -38px;
-  width: 12px;
-  height: 12px;
-  background-image: url("img/shape2.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
+/* Radio input style */
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: -1px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
-  border-radius: 50%;
+  left: -35px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radiobutton-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::before {
+  visibility: hidden;
+}
+
+.filter-input-radio + label:hover::before {
+  opacity: 1;
 }
 
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
+  left: -35px;
   top: 5px;
-  left: -36px;
-  width: 8px;
-  height: 8px;
-  background-color: #000000;
-  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radiobutton-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
 }
 
-.container-filter {
-  opacity: 40%;
+.filter-input-radio:checked + label:hover::after {
+  opacity: 1;
 }
 
-.container-filter input:hover {
-  color: var(--special-input);
+
+/* Checkbox style*/
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
 }
 
-.container-filter input:disabled {
-  opacity: 10%;
+.filter-input-checkbox + label:hover::before {
+  opacity: 1;
 }
 
-.filter-box {
-  border: none;
-  /*margin-left: 19px;*/
-  margin: 0;
+.filter-input-checkbox:checked + label::before {
+  visibility: hidden;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label:hover::after {
+  opacity: 1;
+}
+
+.visually-hidden-control {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  margin-bottom: 40px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*фильтр Стоимость*/
 
 .filter-cost {
-  margin: 0;
   padding: 0;
   border: none;
   width: 260px;
-  margin-bottom: 54px;
+  margin: 0 0 54px;
   text-transform: uppercase;
 }
 
@@ -1224,10 +1258,9 @@ grid-template-columns: 1fr 1fr;*/
 .triangle-set {
   display: inline;
   flex-direction: row;
-  margin: 0;
   padding: 0;
   width: 40px;
-  margin-top: 3px;
+  margin: 3px 0 0;
 }
 
 /*Шаблоны*/
@@ -1254,10 +1287,9 @@ grid-template-columns: 1fr 1fr;*/
   display: block;
   position: relative;
   margin: 0;
-  padding: 0;
   vertical-align: top;
   width: 358px;
-  padding-bottom: 28px;
+  padding: 0 0 28px;
   object-fit: contain;
 }
 
@@ -1312,10 +1344,10 @@ grid-template-columns: 1fr 1fr;*/
   height: 231px;
   width: 358px;
   position: absolute;
-  top:387px;
+  top: 387px;
   border-radius: 0 0 5px 5px;
   text-align: center;
-  border: 1px solid var(--basic-black);
+
   display: none;
 }
 
@@ -1329,11 +1361,9 @@ grid-template-columns: 1fr 1fr;*/
 }
 
 .catalog-block button {
-  padding: 0;
   width: 200px;
   margin: auto;
-  padding-top: 3px;
-  padding-right: 3px;
+  padding: 3px 3px 0 0;
 }
 
 /*Кнопки под шаблонами*/
@@ -1342,11 +1372,8 @@ grid-template-columns: 1fr 1fr;*/
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
   padding: 0;
-  /*display: grid;
-  grid-template-columns: 20px 20px 20px 20px;*/
-  margin-top: 36px;
+  margin: 36px auto auto;
 }
 
 .pagination-item a {

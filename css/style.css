@@ -147,14 +147,15 @@ img {
   font-weight: 500;
 }
 
-.site-navigation a:active,
-.basket-navigation a:active {
-  opacity: 30%;
-}
-
 .site-navigation a:hover,
 .basket-navigation a:hover {
   color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.basket-navigation a:active {
+  opacity: 30%;
+  color: var(--basic-black);
 }
 
 .basket-navigation a {

@@ -107,7 +107,7 @@ img {
   justify-content: space-between;
   vertical-align: top;
   height: 39px;
-  padding-top: 50px;
+  padding-top: 53px;
 }
 
 .main-header-logo {
@@ -520,13 +520,13 @@ img {
   /*align-items: center;*/
 }
 
-html-academy{
+.html-academy {
   padding-right: 5px;
   margin-left: 25px;
   min-width: 199px;
 }
 
-.barber{
+.barber {
   margin-left: 20px;
   padding-right: 5px;
 }
@@ -566,7 +566,7 @@ html-academy{
   display: block;
   position: absolute;
   margin-left: 140px;
-  margin-top: 64px;
+  margin-top: 52px;
   /*margin-bottom: 54px;*/
   /*padding-left: 50px;*/
   width: 319px;
@@ -617,12 +617,7 @@ grid-template-columns: 1fr 1fr;*/
 
 .contacts-map {
   height: 416px;
-  margin-top: 10px;
-}
-
-.filter-input{
-  width: 25px;
-  height: 25px;
+  /*margin-top: 10px;*/
 }
 
 .contacts-map-marker {
@@ -630,7 +625,7 @@ grid-template-columns: 1fr 1fr;*/
   height: 190px;
   position: absolute;
   left: 823px;
-  top: 96px;
+  top: 83px;
 }
 
 .button.contacts {
@@ -928,9 +923,11 @@ grid-template-columns: 1fr 1fr;*/
   line-height: 2.4;
 }
 
-.container-filter li {
-
+.filter-input{
+  width: 25px;
+  height: 25px;
 }
+
 
 .container-title {
   padding: 0;
@@ -939,7 +936,7 @@ grid-template-columns: 1fr 1fr;*/
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   color: var(--basic-black);
 }
 
@@ -954,7 +951,7 @@ grid-template-columns: 1fr 1fr;*/
   line-height: 18px;
   border: none;
   font-weight: 500;
-  margin-top: 12px;
+  margin-top: 3px;
   width: 260px;
   height: 50px;
 }
@@ -979,17 +976,53 @@ grid-template-columns: 1fr 1fr;*/
   opacity: 0.3;
 }
 
-/*.filter-label:active {*/
-/*  opacity: 30%;*/
-/*}*/
+/*Кнопки фильтрыа выбора*/
 
-.filter-label.fixed {
-  /*padding-top: 20px;*/
-  /*padding-bottom: 18px;*/
+.filter-input + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
 }
 
-.container-filter input {
-  color: var(--special-input);
+.filter-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 12px;
+  height: 12px;
+  background-image: url("img/shape2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -36px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.container-filter {
   opacity: 40%;
 }
 
@@ -1006,7 +1039,7 @@ grid-template-columns: 1fr 1fr;*/
   /*margin-left: 19px;*/
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 /*фильтр Стоимость*/
@@ -1026,7 +1059,7 @@ grid-template-columns: 1fr 1fr;*/
 
 .range-filter {
   width: 260px;
-  padding-top: 42px;
+  padding-top: 41px;
 }
 
 .filter-item legend {
@@ -1120,6 +1153,7 @@ grid-template-columns: 1fr 1fr;*/
   /*grid-template-columns: 134px 60px 60px 101px 40px;*/
   grid-template-columns: 134px auto 40px;
   width: 758px;
+  height: 66px;
 }
 
 .catalog-sort-title {

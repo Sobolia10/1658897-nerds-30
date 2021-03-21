@@ -653,7 +653,7 @@ grid-template-columns: 1fr 1fr;*/
 .footer-social ul {
   list-style: none;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 90px 90px 90px;
   width: 261px;
   padding-left: 0;
 }
@@ -661,6 +661,7 @@ grid-template-columns: 1fr 1fr;*/
 .social-button {
   width: 81px;
   height: 81px;
+
   background-color: var(--basic-light);
   color: var(--basic-white);
   text-align: center;

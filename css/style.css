@@ -144,6 +144,7 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .site-navigation a:active,
@@ -281,7 +282,8 @@ img {
 
 @media (max-width: 1200px) {
   .features {
-    margin: 80px 30px 0;
+    margin-top: 80px;
+    margin-bottom: 0;
     width: 1160px;
     padding-bottom: 80px;
     border-bottom: 1px solid var(--basic-extra-light);
@@ -329,7 +331,7 @@ img {
   width: 160px;
   height: 50px;
   margin-top: 15px;
-  /*margin: 32px 240px 80px 240px;*/
+  border-radius: 3px;
 }
 
 .button-red {
@@ -659,24 +661,14 @@ grid-template-columns: 1fr 1fr;*/
 .social-button {
   width: 81px;
   height: 81px;
-  margin: auto 9px auto auto;
   background-color: var(--basic-light);
   color: var(--basic-white);
   text-align: center;
-  /*vertical-align: middle;*/
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/*.footer-social img {*/
-/*  padding-top: 30px;*/
-/*}*/
-
-/*.social-button a {*/
-/*  padding-top: 30px;*/
-/*}*/
 
 .social-button:hover {
   background-color: var(--active-dark-red);
@@ -834,17 +826,16 @@ grid-template-columns: 1fr 1fr;*/
 .login-item-text {
   width: 760px;
   height: 145px;
-  resize: none;
   margin-top: 34px;
-  padding-left: 14px;
-  padding-top: 14px;
-  box-sizing: border-box;
-  border: 2px solid var(--active-grey);
 }
 
 .login-item-text textarea {
   height: 118px;
   width: 100%;
+  padding-left: 14px;
+  padding-top: 14px;
+  box-sizing: border-box;
+  border: 2px solid var(--active-grey);
 }
 
 .login-item-email input,

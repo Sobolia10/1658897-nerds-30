@@ -702,7 +702,7 @@ grid-template-columns: 1fr 1fr;*/
 /*modal*/
 
 .modal {
-  display: none;
+  /*display: none;*/
   position: absolute;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background-position: 0 0;
@@ -750,37 +750,50 @@ grid-template-columns: 1fr 1fr;*/
   flex-direction: row;
 }
 
-.modal-icon-user,
-.modal-icon-password,
-.modal-icon-text {
-  opacity: 50%;
-}
+/*.modal-icon-user,*/
+/*.modal-icon-password,*/
+/*.modal-icon-text {*/
+/*  opacity: 50%;*/
+/*}*/
 
 .login-item input[type="email"],
-.login-item input[type="text"] {
+.login-item input[type="text"],
+.login-item textarea {
   font: inherit;
-  color: var(--active-black);
   border: 2px solid var(--active-grey);
   font-size: 16px;
   line-height: 18px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.login-item input::placeholder,
+.login-item input::placeholder:hover,
+.login-item textarea::placeholder,
+.login-item textarea::placeholder:hover {
+  color: var(--active-black);
+  opacity: 50%;
 }
 
 .login-item input[type="email"]:hover,
-.login-item input[type="text"]:hover {
+.login-item input[type="text"]:hover,
+.login-item textarea:hover {
   font: inherit;
-  border: var(--active-border-grey);
+  border: 2px solid var(--active-border-grey);
 }
 
-.login-form input[type="email"]:focus,
-.login-form input[type="text"]:focus {
+.login-item input[type="email"]:focus,
+.login-item input[type="text"]:focus,
+.login-item textarea:focus {
   font: inherit;
-  border: var(--basic-black);
+  border: 2px solid var(--basic-black);
 }
 
-.login-form input[type="email"]:invalid,
-.login-form input[type="text"]:invalid {
+.login-item input[type="email"]:invalid,
+.login-item input[type="text"]:invalid,
+.login-item textarea:invalid {
   font: inherit;
-  border: var(--active-dark-red);
+  border: 2px solid var(--active-dark-red);
   color: var(--active-dark-red);
 }
 
@@ -846,11 +859,6 @@ grid-template-columns: 1fr 1fr;*/
   padding-left: 14px;
   box-sizing: border-box;
 }
-
-/*.login-item-text {*/
-/*  padding-top: 16px;*/
-/*  padding-left: 16px;*/
-/*}*/
 
 /*correct*/
 

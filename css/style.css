@@ -107,7 +107,7 @@ img {
   justify-content: space-between;
   vertical-align: top;
   height: 39px;
-  padding-top: 53px;
+  padding-top: 50px;
 }
 
 .main-header-logo {
@@ -162,7 +162,7 @@ img {
   text-align: right;
   /*padding-bottom: 0;*/
   margin-top: 3px;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 .icon-basket {
@@ -376,7 +376,7 @@ img {
   width: 651px;
   height: 91px;
   color: var(--basic-black);
-  margin: 41px 0 32px 1px;
+  margin: 41px 0 32px 4px;
 }
 
 .content p {
@@ -483,13 +483,13 @@ img {
   max-width: 1160px;
   list-style: none;
   padding: 0;
-  margin: 5px auto;
+  margin: 0px auto;
   vertical-align: middle;
 }
 
 .partner-item {
   opacity: 20%;
-  padding-left: 30px;
+  padding-left: 7px;
   padding-top: 16px;
 
   /*margin-bottom: 20px;*/
@@ -522,23 +522,24 @@ img {
 }
 
 .html-academy {
-  padding-right: 5px;
   margin-left: 25px;
   min-width: 199px;
+  padding-right: 13px;
 }
 
 .barber {
-  margin-left: 20px;
+  margin-left: 8px;
   padding-right: 5px;
 }
 
 .pink {
-  padding-right: 15px;
+  padding-right: 16px;
   margin-left: 25px;
 }
 
 .mishka {
-  margin-right: 40px;
+  margin-right: 43px;
+  margin-top: 4px;
 }
 
 .partner-item:hover {
@@ -599,7 +600,7 @@ grid-template-columns: 1fr 1fr;*/
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 51px;
+  margin-top: 56px;
   margin-bottom: 23px;
   color: var(--basic-black);
 }
@@ -627,7 +628,7 @@ grid-template-columns: 1fr 1fr;*/
   height: 190px;
   position: absolute;
   left: 823px;
-  top: 83px;
+  top: 90px;
 }
 
 .button.contacts {
@@ -809,7 +810,7 @@ grid-template-columns: 1fr 1fr;*/
   display: block;
   width: 259px;
   height: 50px;
-  margin-top: 47px;
+  margin-top: 30px;
   margin-left: 0;
   margin-right: 1px;
   padding: 17px 0 15px 3px;
@@ -841,6 +842,7 @@ grid-template-columns: 1fr 1fr;*/
   width: 760px;
   height: 145px;
   margin-top: 34px;
+  resize: none;
 }
 
 .login-item-text textarea {
@@ -858,6 +860,7 @@ grid-template-columns: 1fr 1fr;*/
   width: 360px;
   padding-left: 14px;
   box-sizing: border-box;
+  margin-top: 19px;
 }
 
 /*correct*/
@@ -1282,7 +1285,7 @@ grid-template-columns: 1fr 1fr;*/
   flex-wrap: wrap;
   align-content: flex-start;
   width: 758px;
-  margin: 10px 0 0 0;
+  margin: 13px 0 0 0;
   padding: 0;
   border-collapse: collapse;
 }
@@ -1342,7 +1345,7 @@ grid-template-columns: 1fr 1fr;*/
   color: var(--special-grey);
   margin-bottom: 32px;
   width: 255px;
-  margin-left: 49px;
+  margin-left: 51px;
   margin-top: 13px;
 }
 
@@ -1384,7 +1387,7 @@ grid-template-columns: 1fr 1fr;*/
 .catalog-block button {
   width: 200px;
   margin: auto;
-  padding: 3px 3px 0 0;
+  padding: 3px 0 0 0;
 }
 
 /*Кнопки под шаблонами*/

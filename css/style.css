@@ -742,6 +742,7 @@ grid-template-columns: 1fr 1fr;*/
 
 .modal-close:active {
   opacity: 10%;
+  outline: none;
 }
 
 .modal-title {
@@ -1288,31 +1289,26 @@ grid-template-columns: 1fr 1fr;*/
 .catalog-item {
   display: block;
   position: relative;
-  margin: 0;
   vertical-align: top;
   width: 358px;
-  padding: 0 0 28px;
+  height: 615px;
+  margin: 0 0 35px;
   object-fit: contain;
 }
 
 .catalog-span {
-  width: 360px;
+  width: 358px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   opacity: 0.12;
 }
 
-.catalog-span:hover {
-  color: var(--special-input);
-  opacity: 1;
-}
-
 .odd {
-  padding-left: 42px;
-  /*padding-bottom: 26px;*/
+  margin-left: 42px;
 }
 
 /*Всплывающее окно каталога*/
+
 
 .catalog-title {
   text-transform: uppercase;
@@ -1328,6 +1324,7 @@ grid-template-columns: 1fr 1fr;*/
 }
 
 .catalog-title:active {
+  color: var(--basic-black);
   opacity: 30%;
 }
 
@@ -1349,13 +1346,27 @@ grid-template-columns: 1fr 1fr;*/
   top: 387px;
   border-radius: 0 0 5px 5px;
   text-align: center;
-
   display: none;
+}
+
+.open .catalog-block {
+  display: block;
+}
+
+.open {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item:hover .catalog-span {
+  opacity: 1;
+}
+
+.site-item:hover  {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-item:hover .catalog-block {
   display: block;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-block h3 {

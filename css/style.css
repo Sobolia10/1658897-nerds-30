@@ -100,7 +100,7 @@ img {
   justify-content: space-between;
   vertical-align: top;
   height: 39px;
-  padding-top: 50px;
+  padding-top: 51px;
 }
 
 .main-header-logo {
@@ -128,6 +128,11 @@ img {
 
 .site-navigation li {
   margin-right: 46px;
+  padding: 9px 0 13px;
+}
+
+.menu-active {
+  border-bottom: 2px solid var(--basic-red);
 }
 
 .site-navigation a,
@@ -562,7 +567,7 @@ img {
   display: block;
   position: absolute;
   margin-left: 140px;
-  margin-top: 52px;
+  margin-top: 56px;
   /*margin-bottom: 54px;*/
   /*padding-left: 50px;*/
   width: 319px;
@@ -593,7 +598,7 @@ grid-template-columns: 1fr 1fr;*/
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 56px;
+  margin-top: 50px;
   margin-bottom: 23px;
   color: var(--basic-black);
 }
@@ -885,6 +890,10 @@ grid-template-columns: 1fr 1fr;*/
   margin: 0 0 55px;
 }
 
+.header-title-hidden {
+  height: 150px;
+}
+
 /*.header-title {*/
 /*  margin: 0 auto;*/
 /*}*/
@@ -914,7 +923,7 @@ grid-template-columns: 1fr 1fr;*/
 .container-filter {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 35px;
+  margin: 5px 0 0 35px;
   line-height: 2.5;
 }
 
@@ -924,7 +933,7 @@ grid-template-columns: 1fr 1fr;*/
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 0 0 7px;
+  margin: 0px;
   color: var(--basic-black);
 }
 
@@ -1091,7 +1100,7 @@ grid-template-columns: 1fr 1fr;*/
 
 .range-filter {
   width: 260px;
-  padding-top: 41px;
+  padding-top: 50px;
 }
 
 .filter-item legend {
@@ -1185,7 +1194,7 @@ grid-template-columns: 1fr 1fr;*/
   /*grid-template-columns: 134px 60px 60px 101px 40px;*/
   grid-template-columns: 134px auto 40px;
   width: 758px;
-  height: 66px;
+  height: 55px;
 }
 
 .catalog-sort-title {
@@ -1278,7 +1287,7 @@ grid-template-columns: 1fr 1fr;*/
   flex-wrap: wrap;
   align-content: flex-start;
   width: 758px;
-  margin: 13px 0 0 0;
+  margin: 22px 0 0 0;
   padding: 0;
   border-collapse: collapse;
 }
@@ -1357,15 +1366,29 @@ grid-template-columns: 1fr 1fr;*/
   display: block;
 }
 
-.open {
+.open img {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
+
+.catalog-span img {
+  box-shadow: 0 0 0 0;
+}
+
+.catalog-span:hover img.site-item {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
 
 .catalog-item:hover .catalog-span {
   opacity: 1;
 }
 
-.site-item:hover  {
+.catalog-item:hover img.site-item{
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.site-item:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 

@@ -46,15 +46,6 @@ body {
   background-color: var(--basic-white);
 }
 
-/*  min-height: 100%;*/
-/*display: grid;*/
-/*grid-template-rows:*/
-/*  min-content*/
-/*  1fr*/
-/*  min-content;*/
-/*align-content: start;*/
-
-
 a {
   text-decoration: none;
 }
@@ -75,20 +66,22 @@ img {
   display: block;
   width: 240px;
   height: 50px;
-  padding-top: 13px;
   border-radius: 3px;
   box-sizing: border-box;
+  padding-top: 13px;
   margin-bottom: 61px;
+}
+
+
+.button:hover,
+.button-red:hover {
+  background-color: var(--active-dark-red);
 }
 
 .button:active,
 .button-red:active {
   background-color: var(--active-extra-dark-red);
-}
-
-.button:hover,
-.button-red:hover {
-  background-color: var(--active-dark-red);
+  opacity: 30%;
 }
 
 /* Navigation */
@@ -122,7 +115,7 @@ img {
 }
 
 .main-header-logo:active {
-  opacity: 20%;
+  opacity: 30%;
 }
 
 .site-navigation {

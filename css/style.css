@@ -702,7 +702,7 @@ grid-template-columns: 1fr 1fr;*/
 /*modal*/
 
 .modal {
-  /*display: none;*/
+  display: none;
   position: absolute;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background-position: 0 0;

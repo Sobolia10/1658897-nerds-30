@@ -88,7 +88,7 @@ img {
   justify-content: space-between;
   vertical-align: top;
   height: 39px;
-  padding-top: 51px;
+  padding-top: 49px;
 }
 
 .main-header-logo {
@@ -1220,11 +1220,6 @@ grid-template-columns: 1fr 1fr;*/
   color: var(--basic-black);
   /*margin-right: 25px;*/
 }
-
-
-/*.current {*/
-/*  margin-left: 241px;*/
-/*}*/
 
 .sort:active,
 .current {

@@ -201,7 +201,8 @@ img {
   width: 397px;
   height: 111px;
   font-weight: 500;
-  margin-top: 78px;
+  margin-top: 80px;
+  padding-left: 1px;
 }
 
 .slider-controls {

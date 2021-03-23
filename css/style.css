@@ -72,8 +72,8 @@ img {
   margin-bottom: 61px;
 }
 
-.slider-description a: {
-  opacity: 30%;
+.slider-description .button:active {
+  color: rgba(255,255,255, 0.3);
 }
 
 .button:hover,

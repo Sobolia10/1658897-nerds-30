@@ -653,10 +653,6 @@ img {
   justify-content: center;
 }
 
-.social-button a {
-  padding-top: 7px;
-}
-
 .social-button:hover {
   background-color: var(--active-dark-red);
 }
@@ -873,11 +869,6 @@ img {
   height: 150px;
 }
 
-/*.header-title {*/
-/*  margin: 0 auto;*/
-/*}*/
-
-
 /*КАТАЛОГ*/
 
 .catalog-container {
@@ -931,6 +922,8 @@ img {
   width: 260px;
   height: 50px;
   outline: none;
+  padding-top: 5px;
+  padding-left: 4px;
 }
 
 .filter-button:hover,
@@ -943,9 +936,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-/*Кнопки фильтрыа выбора*/
-
+/*Кнопки фильтра выбора*/
 
 /*.container-filter {*/
 /*  opacity: 40%;*/
@@ -965,14 +956,26 @@ img {
   margin: 0 0 35px;
 }
 
+.filter-box legend {
+  margin-bottom: 2px;
+}
+
 .filter-option label {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-left: 1px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.fix label {
+  margin-bottom: 18px;
 }
 
 /* Radio input style */
+
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
@@ -1011,13 +1014,13 @@ img {
   opacity: 1;
 }
 
-
 /* Checkbox style*/
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -35px;
-  top: 5px;
+  top: 8px;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-unchecked.svg");
@@ -1038,7 +1041,7 @@ img {
   content: "";
   position: absolute;
   left: -35px;
-  top: 5px;
+  top: 8px;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-checked.svg");
@@ -1136,13 +1139,13 @@ img {
 .placeholder-cost {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2px;
+  /*margin-bottom: 2px;*/
 }
 
 .placeholder-cost input {
-  width: 56px;
-  padding: 12px;
-  margin-left: 9px;
+  /*width: 56px;*/
+  /*padding: 12px;*/
+  /*margin-left: 9px;*/
   text-align: center;
   border: none;
   border-radius: 5px;
@@ -1150,31 +1153,36 @@ img {
   font-family: inherit;
   font-size: inherit;
   color: var(--special);
+  width: 80px;
+  height: 38px;
+  padding: 0;
 }
 
+.placeholder-cost label {
+  padding-top: 2px;
+  width: 115px;
+}
+
+.min-price {
+margin-right: 9px;
+}
+
+
 .min-price input {
-  padding-left: 23px;
-  margin-left: 9px;
-  padding-bottom: 6px;
-  width: 46px;
+  margin-left: 8px;
 }
 
 .max-price input {
-  padding-right: 8px;
-  padding-bottom: 9px;
-  padding-left: 8px;
-  margin-left: 9px;
-  width: 63px;
+  margin-left: 8px;
 }
 
 /*сортировка каталога сверху*/
 
 .catalog-sort {
   display: grid;
-  /*grid-template-columns: 134px 60px 60px 101px 40px;*/
   grid-template-columns: 134px auto 40px;
   width: 758px;
-  height: 55px;
+  height: 57px;
 }
 
 .catalog-sort-title {
@@ -1184,7 +1192,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   vertical-align: top;
-  margin-bottom: 48px;
 }
 
 .catalog-sort-title:hover {
@@ -1237,6 +1244,18 @@ img {
   height: 10px;
 }
 
+.triangle-up {
+  opacity: 0.2;
+}
+
+.triangle-up:hover {
+  opacity: 1;
+}
+
+.triangle-up :active {
+  color: var(--special-triangle);
+}
+
 /*.triangle:hover {*/
 /*  opacity: 100%;*/
 /*  background-color: var(--active-light);*/
@@ -1251,7 +1270,7 @@ img {
   flex-direction: row;
   padding: 0;
   width: 40px;
-  margin: 3px 0 0;
+  margin: 5px 0 0;
 }
 
 /*Шаблоны*/
@@ -1262,13 +1281,13 @@ img {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 758px;
-  margin: 22px 0 0 0;
+  margin: 23px 0 0 1px;
   padding: 0;
   border-collapse: collapse;
+  padding-bottom: 2px;
 }
 
 .catalog-list button {
-  /*margin: 32px 80px 44px 80px;*/
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -1285,18 +1304,17 @@ img {
 }
 
 .catalog-span {
-  width: 358px;
+  width: 360px;
   height: 40px;
   border-radius: 5px 5px 0 0;
   opacity: 0.12;
 }
 
 .odd {
-  margin-left: 42px;
+  margin-left: 41px;
 }
 
 /*Всплывающее окно каталога*/
-
 
 .catalog-title {
   text-transform: uppercase;
@@ -1322,7 +1340,7 @@ img {
   color: var(--special-grey);
   margin-bottom: 32px;
   width: 255px;
-  margin-left: 51px;
+  margin-left: 50px;
   margin-top: 13px;
 }
 
@@ -1341,6 +1359,10 @@ img {
   display: block;
 }
 
+.open .catalog-span {
+  opacity: 1;
+}
+
 .open img {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
@@ -1352,7 +1374,6 @@ img {
 .catalog-span:hover img.site-item {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
-
 
 .catalog-item:hover .catalog-span {
   opacity: 1;

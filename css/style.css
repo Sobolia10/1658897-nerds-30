@@ -1351,18 +1351,6 @@ img {
   display: none;
 }
 
-.open .catalog-block {
-  display: block;
-}
-
-.open .catalog-span {
-  opacity: 1;
-}
-
-.open img {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
 .catalog-span img {
   box-shadow: 0 0 0 0;
 }
